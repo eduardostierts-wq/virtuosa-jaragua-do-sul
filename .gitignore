@@ -1,0 +1,19 @@
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editores
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea/
+
+# Dependências e builds (caso o projeto evolua para um bundler)
+node_modules/
+dist/
+.cache/
+
+# Ambiente
+.env
+.env.local

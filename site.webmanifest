@@ -1,0 +1,13 @@
+{
+  "name": "Virtuosa Estética — Jaraguá do Sul",
+  "short_name": "Virtuosa JS",
+  "description": "Clínica de estética em Jaraguá do Sul com preços publicados e avaliação gratuita.",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#EC008C",
+  "lang": "pt-BR",
+  "icons": [
+    { "src": "assets/img/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}
