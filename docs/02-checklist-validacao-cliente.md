@@ -10,7 +10,7 @@ Itens que **não podem ir ao ar sem aprovação**. Cada um está marcado no cód
 | # | Item | Situação | Onde está no código |
 |---|---|---|---|
 | 1.1 | **Dourado** | ❌ **Não utilizado.** Aprovação pendente. Se for liberado, sugerimos entrar apenas como filete em selos de protocolo exclusivo, nunca em botão ou texto corrido | comentário no topo de `assets/css/base.css` |
-| 1.2 | **Logotipo** | ⚠ O logotipo do site é um *wordmark* construído em HTML + SVG com a fonte Satisfy, reproduzindo a estrutura da marca. **Solicitar o arquivo oficial** (SVG) no manual de marca e substituir | `.brand` em `common`/todas as páginas + `.brand__word` em `components.css` |
+| 1.2 | **Logotipo** | ⚠ Em uso o **logotipo oficial da rede**, recortado com fundo transparente a partir de um arquivo de baixa resolução (241 × 94 px). Serve para tela; **não serve para impressão nem para telas grandes**. Solicitar o arquivo vetorial (SVG/AI) no manual de marca e confirmar a autorização de uso | `assets/img/logo.png` e `logo-branco.png`; regras `.brand__logo` em `components.css` |
 | 1.3 | Paleta rosa | ✅ Extraída do site oficial (`#EC008C`, `#FF1AA2`, `#C40074`, `#FFE3F8`) | `:root` em `base.css` |
 | 1.4 | Tipografia | ✅ Montserrat + Satisfy, iguais às do site oficial, auto-hospedadas (SIL Open Font License) | `assets/fonts/` |
 | 1.5 | Glow neon amarelo do hero | ✅ Presente no site oficial; confirmar se pode ser replicado na unidade | `.hero__glow` em `pages.css` |

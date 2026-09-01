@@ -82,7 +82,7 @@
 .header.is-stuck{box-shadow:0 6px 24px -18px rgba(23,16,24,.6);}
 .header__inner{display:flex;align-items:center;gap:1rem;min-height:72px;}
 .brand{display:flex;align-items:center;gap:.6rem;margin-right:auto;}
-.brand img,.brand svg{height:42px;width:auto;}
+.brand__logo{width:clamp(138px,19vw,164px);height:auto;flex:none;}
 .brand__unit{
   display:none;padding-left:.75rem;margin-left:.15rem;border-left:1px solid var(--line);
   font-size:.68rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-60);
@@ -382,7 +382,7 @@
 .footer a{color:rgba(255,255,255,.72);}
 .footer a:hover{color:var(--pink-300);}
 .footer__grid{display:grid;gap:2rem;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));}
-.footer__brand img{height:44px;filter:brightness(0) invert(1);opacity:.95;}
+.footer__brand img{width:158px;height:auto;}
 .footer ul{display:flex;flex-direction:column;gap:.55rem;}
 .footer__bottom{
   margin-top:2.5rem;padding-block:1.25rem;border-top:1px solid rgba(255,255,255,.12);
@@ -477,28 +477,11 @@
 .chat__foot{padding:.6rem 1.1rem .8rem;background:#fff;font-size:.68rem;color:var(--ink-40);text-align:center;border-top:1px solid var(--line);}
 
 /* ------------------------------------------------------------------
-   MARCA (logotipo construído em HTML+SVG)
-   O arquivo oficial do logotipo deve ser solicitado à franqueadora.
-   Este wordmark reproduz a estrutura da marca (script + caixa alta)
-   usando a fonte Satisfy — ver docs/02-checklist-validacao-cliente.md
+   MARCA
+   O logotipo é o arquivo oficial da rede (assets/img/logo.png), recortado
+   com fundo transparente. A versão do rodapé (logo-branco.png) tem o mesmo
+   desenho em branco, para o fundo escuro.
+   ⚠ Solicitar o arquivo vetorial (SVG/AI) no manual de marca da
+     franqueadora antes de qualquer uso comercial.
    ------------------------------------------------------------------ */
-.brand__mark{height:40px;width:34px;flex:none;}
-.brand__word{
-  display:block;font-family:var(--font-script);font-size:1.75rem;line-height:1;
-  color:var(--pink);letter-spacing:.01em;
-}
-.brand__word em{
-  display:block;font-family:var(--font);font-style:normal;
-  font-size:.53rem;font-weight:700;letter-spacing:.34em;text-transform:uppercase;
-  color:var(--ink-60);margin-top:.18rem;
-}
-.brand__word--light,.footer .brand__word{color:#fff;}
-.footer .brand__word em{color:rgba(255,255,255,.6);}
-.drawer .brand__word{font-size:1.5rem;}
-
-/* Card compacto usado na listagem de procedimentos (sem foto) */
-.card--flat{border-top:3px solid var(--pink-200);}
-.card--flat:hover{border-top-color:var(--pink);}
-.card__tags{display:flex;flex-wrap:wrap;gap:.35rem;}
-.card--flat .card__price{display:flex;align-items:baseline;gap:.4rem;flex-wrap:wrap;font-size:.8rem;}
-.card--flat .card__price b{display:inline;font-size:1.3rem;}
+.drawer .brand__logo{width:150px;}
